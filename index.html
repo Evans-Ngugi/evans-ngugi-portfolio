@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b35">
+  <title>Evans Muhia Ngugi | Water Engineering & GIS</title>
+  <meta name="description" content="Professional portfolio of Evans Muhia Ngugi, a water engineering technician specialising in water and wastewater infrastructure, GIS asset management and NRW analysis in Kenya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#071b35; --navy2:#0b2b50; --blue:#12628b; --cyan:#20c6d7;
+      --mint:#43d6b5; --ink:#14263a; --muted:#607286; --pale:#f2f7fb;
+      --white:#fff; --line:#dce7ef; --shadow:0 18px 48px rgba(8,35,62,.10);
+      --radius:20px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{font-family:"DM Sans",Arial,sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    .container{width:min(1160px,calc(100% - 44px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(7,27,53,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.09)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.04em}
+    .brand-mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),#1687bb);color:#06223e;font-size:1rem}
+    .nav-links{display:flex;align-items:center;gap:30px;list-style:none}
+    .nav-links a{color:#d9e8f5;font-size:.94rem;font-weight:600;transition:color .2s}
+    .nav-links a:hover{color:var(--cyan)}
+    .nav-cta{padding:10px 17px;border:1px solid rgba(32,198,215,.65);border-radius:999px;color:#fff!important}
+    .menu-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:10px;padding:8px 12px;font:inherit}
+    .hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 75% 35%,#104a70 0,#0b2b50 35%,#071b35 76%);color:#fff;padding:86px 0 76px}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.15;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(90deg,transparent,#000)}
+    .hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:44px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#8deaf0;text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:700;margin-bottom:18px}
+    .eyebrow:before{content:"";width:26px;height:2px;background:var(--cyan)}
+    h1,h2,h3{font-family:Manrope,"DM Sans",sans-serif;line-height:1.2}
+    h1{font-size:clamp(2.45rem,5vw,4.25rem);letter-spacing:-.045em;margin-bottom:18px}
+    h1 span{color:#51d9df}
+    .hero-copy>p{font-size:1.12rem;color:#c7d9e8;max-width:540px;margin-bottom:28px}
+    .hero-meta{color:#9bb6ca;font-size:.93rem;margin-top:22px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 21px;border-radius:10px;font-weight:700;transition:transform .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,#28d0d3,#1599bd);color:#05223b;box-shadow:0 10px 25px rgba(32,198,215,.2)}
+    .btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+    .hero-visual{position:relative}
+    .hero-visual img{width:100%;border:1px solid rgba(113,224,240,.28);border-radius:18px;box-shadow:0 28px 70px rgba(0,0,0,.35)}
+    .visual-caption{display:flex;justify-content:space-between;gap:12px;color:#9bb6ca;font-size:.78rem;margin-top:12px}
+    .stats{background:#fff;position:relative;margin-top:-1px}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);background:#fff;transform:translateY(-24px);overflow:hidden}
+    .stat{padding:22px 26px;text-align:center}
+    .stat+.stat{border-left:1px solid var(--line)}
+    .stat strong{display:block;font:800 1.65rem Manrope,sans-serif;color:#087da0}
+    .stat span{color:var(--muted);font-size:.88rem}
+    section{padding:88px 0}
+    .section-head{max-width:690px;margin:0 auto 42px;text-align:center}
+    .section-kicker{color:#078da6;text-transform:uppercase;letter-spacing:.15em;font-size:.75rem;font-weight:800;margin-bottom:10px}
+    h2{font-size:clamp(1.9rem,3vw,2.65rem);color:var(--navy);letter-spacing:-.035em;margin-bottom:13px}
+    .section-head p{color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:54px;align-items:start}
+    .profile-panel{padding:30px;border-radius:var(--radius);background:linear-gradient(145deg,#0b2b50,#0d5876);color:#fff;min-height:310px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:var(--shadow)}
+    .profile-icon{width:64px;height:64px;border-radius:18px;background:rgba(58,214,220,.16);border:1px solid rgba(91,229,231,.35);display:grid;place-items:center;font-size:1.8rem;margin-bottom:auto}
+    .profile-panel h3{font-size:1.35rem;margin:34px 0 8px;color:#fff}
+    .profile-panel p{color:#c5dbe8;font-size:.94rem}
+    .about-copy>p{color:#52677a;font-size:1.04rem;margin-bottom:26px}
+    .subheading{font-size:1.1rem;color:var(--navy);margin:26px 0 14px}
+    .timeline{display:grid;gap:13px}
+    .timeline-item{padding:0 0 13px 18px;border-left:2px solid #bcebf0;position:relative}
+    .timeline-item:before{content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;background:#13a9bb}
+    .timeline-item strong{display:block;color:#1c354c;font-size:.96rem}
+    .timeline-item span{font-size:.88rem;color:var(--muted)}
+    #skills{background:var(--pale)}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .skill-card,.project-card{background:#fff;border:1px solid #e4edf3;border-radius:16px;padding:26px;box-shadow:0 8px 26px rgba(10,43,75,.045)}
+    .skill-icon{width:48px;height:48px;border-radius:14px;background:#e5f8fa;color:#078da6;display:grid;place-items:center;font-size:1.35rem;margin-bottom:18px}
+    .skill-card h3,.project-card h3{font-size:1.12rem;color:var(--navy);margin-bottom:14px}
+    .skill-card ul{padding-left:19px;color:#5a6d7f;font-size:.94rem}
+    .skill-card li{padding:3px 0}
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .project-card{padding:0;overflow:hidden;transition:transform .2s,box-shadow .2s}
+    .project-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .project-art{height:150px;background:linear-gradient(135deg,#0b2b50,#087da0);display:flex;align-items:center;justify-content:center;color:#8ce9ed;font-size:2.7rem;position:relative;overflow:hidden}
+    .project-art:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.17);border-radius:50%;right:-35px;top:-105px;box-shadow:0 0 0 24px rgba(255,255,255,.035),0 0 0 50px rgba(255,255,255,.025)}
+    .project-body{padding:24px}
+    .project-body p{color:var(--muted);font-size:.94rem}
+    .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
+    .tag{font-size:.75rem;font-weight:700;color:#08788d;background:#e5f7f8;padding:5px 10px;border-radius:999px}
+    #contact{background:linear-gradient(135deg,#071b35,#0b4265);color:#fff}
+    #contact .section-head h2{color:#fff}
+    #contact .section-head p{color:#c1d4e3}
+    .contact-panel{max-width:760px;margin:auto;text-align:center;padding:34px;border:1px solid rgba(255,255,255,.16);border-radius:18px;background:rgba(255,255,255,.05)}
+    .contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:22px}
+    .contact-links a{color:#8ce9ed;font-weight:700}
+    footer{background:#051326;color:#9db3c6;text-align:center;padding:25px 20px;font-size:.88rem}
+    footer strong{color:#fff}
+    @media(max-width:850px){
+      .hero-grid,.about-grid{grid-template-columns:1fr}
+      .hero-grid{gap:34px}
+      .hero-copy{max-width:700px}
+      .hero-visual{max-width:760px}
+      .skills-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:620px){
+      .container{width:min(100% - 32px,1160px)}
+      nav{min-height:68px;flex-wrap:wrap;padding:12px 0}
+      .menu-toggle{display:block}
+      .nav-links{display:none;flex-direction:column;align-items:stretch;width:100%;gap:0;padding:8px 0 12px}
+      .nav-links.open{display:flex}
+      .nav-links li a{display:block;padding:10px 4px}
+      .nav-cta{border:0;padding:10px 4px}
+      .hero{padding:62px 0 58px}
+      .hero-grid{gap:28px}
+      .hero-copy>p{font-size:1rem}
+      .visual-caption{font-size:.7rem}
+      .stats-grid{grid-template-columns:1fr;transform:translateY(-16px)}
+      .stat{padding:14px}
+      .stat+.stat{border-left:0;border-top:1px solid var(--line)}
+      section{padding:66px 0}
+      .skills-grid,.projects-grid{grid-template-columns:1fr}
+      .profile-panel{min-height:250px}
+      .contact-panel{padding:25px 18px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-mark">EN</span><span>EVANS NGUGI</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="const n=document.querySelector('.nav-links');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">Menu</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li><li><a href="#skills">Expertise</a></li><li><a href="#projects">Projects</a></li><li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Water Engineering · GIS · Infrastructure</div>
+          <h1>Evans Muhia <span>Ngugi</span></h1>
+          <p>Water Engineering Technician focused on strengthening water and sanitation infrastructure through geospatial data, asset management and practical engineering support.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:evansngugi455@gmail.com">Get in touch ↗</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/evans-ngugi831b411a2" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+          </div>
+          <div class="hero-meta">Based in Murang'a County, Kenya</div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/intelligent-water-system.png" alt="Intelligent water system infographic showing source water, treatment, storage, distribution, consumption, collection, stormwater and wastewater reuse">
+          <div class="visual-caption"><span>Integrated water cycle</span><span>Monitor · Manage · Conserve</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats"><div class="container stats-grid">
+      <div class="stat"><strong>9+ Years</strong><span>Water-sector experience</span></div>
+      <div class="stat"><strong>GIS &amp; Assets</strong><span>Utility mapping and records</span></div>
+      <div class="stat"><strong>Kenya</strong><span>Water and sanitation sector</span></div>
+    </div></div>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head"><div class="section-kicker">Professional profile</div><h2>About Me</h2><p>Engineering support, infrastructure information and geospatial solutions for water utilities.</p></div>
+        <div class="about-grid">
+          <aside class="profile-panel"><div class="profile-icon">💧</div><h3>Water infrastructure. Better information. Stronger services.</h3><p>Combining field understanding with GIS and asset data to support informed utility planning and operations.</p></aside>
+          <div class="about-copy">
+            <p>Water engineer with 9+ years of experience supporting water and sanitation infrastructure for four utilities and a national water-sector fund in Kenya. I review engineering drawings and as-builts against field conditions, keep infrastructure records accurate and current, and prepare progress and regulatory reports for management and WASREB.</p>
+            <h3 class="subheading">Education</h3>
+            <div class="timeline">
+              <div class="timeline-item"><strong>BA Development Studies – Project Management</strong><span>Management University of Africa · 2023 – 2026</span></div>
+              <div class="timeline-item"><strong>Diploma in Water Engineering</strong><span>Kenya Water Institute (KEWI) · 2016 – 2019</span></div>
+            </div>
+            <h3 class="subheading">Professional Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item"><strong>Assets Development Officer – GIS &amp; Infrastructure</strong><span>Gatanga Water and Sanitation Company PLC · Apr 2022 – Present</span></div>
+              <div class="timeline-item"><strong>GIS Water Utility Mapping Coordinator</strong><span>Gatundu Water and Sanitation Company · Jul 2021 – Mar 2022</span></div>
+              <div class="timeline-item"><strong>GIS Utility Mapping Coordinator</strong><span>Gatanga Water and Sanitation Company PLC · Sep 2020 – Apr 2021</span></div>
+              <div class="timeline-item"><strong>GIS Intern</strong><span>Murang'a South Water and Sanitation Company · Sep 2018 – Sep 2020</span></div>
+              <div class="timeline-item"><strong>GIS Enumerator – J6P Programme</strong><span>Water Sector Trust Fund · Sep – Nov 2017</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head"><div class="section-kicker">Core capabilities</div><h2>Areas of Expertise</h2><p>Technical and digital skills supporting water utility infrastructure and service delivery.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">💧</div><h3>Water &amp; Wastewater</h3><ul><li>Treatment works, intakes, storage &amp; pipe networks</li><li>Non-Revenue Water (NRW) analysis</li><li>As-built verification &amp; field QA/QC</li><li>Regulatory reporting (WASREB)</li></ul></article>
+          <article class="skill-card"><div class="skill-icon">⌖</div><h3>Geospatial</h3><ul><li>QGIS &amp; ArcGIS Pro</li><li>GPS field survey</li><li>ODK Collect data collection</li><li>Asset register &amp; database management</li></ul></article>
+          <article class="skill-card"><div class="skill-icon">▦</div><h3>Software &amp; Project Tools</h3><ul><li>Civil 3D</li><li>MS Project, Excel, Word, PowerPoint</li><li>Power BI</li><li>Document control &amp; SOP writing</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head"><div class="section-kicker">Selected work</div><h2>Projects &amp; Experience</h2><p>Examples of infrastructure data, mapping and monitoring work.</p></div>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-art">◉</div><div class="project-body"><h3>Monthly NRW Monitoring Workflow</h3><p>A repeatable workflow that turns updated field data into zone-level water loss risk maps each month, replacing manual re-analysis.</p><div class="tags"><span class="tag">QGIS</span><span class="tag">NRW</span><span class="tag">Automation</span></div></div></article>
+          <article class="project-card"><div class="project-art">⌖</div><div class="project-body"><h3>Legacy Drawing Datum Correction</h3><p>Found and corrected a 280-metre location error in legacy infrastructure drawings by converting them to the current survey datum.</p><div class="tags"><span class="tag">Survey</span><span class="tag">GIS</span><span class="tag">QA/QC</span></div></div></article>
+          <article class="project-card"><div class="project-art">▤</div><div class="project-body"><h3>GATAWASCO Asset Register</h3><p>The utility's full infrastructure record – treatment works, intakes, boreholes, tanks, kiosks, pipes and connections – used for operations and capital planning.</p><div class="tags"><span class="tag">Asset Management</span><span class="tag">Database</span></div></div></article>
+          <article class="project-card"><div class="project-art">⌁</div><div class="project-body"><h3>WSTF J6P Water Provider Assessment</h3><p>Assessed water sources and distribution systems of small providers in Narok, Tharaka Nithi and Laikipia, and submitted network maps to the Maji Data platform.</p><div class="tags"><span class="tag">ODK</span><span class="tag">Field Survey</span><span class="tag">Mapping</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head"><div class="section-kicker">Let's connect</div><h2>Contact</h2><p>For professional enquiries and collaboration in water engineering, GIS and infrastructure management.</p></div>
+        <div class="contact-panel">
+          <p>Available through email and LinkedIn.</p>
+          <div class="contact-links"><a href="mailto:evansngugi455@gmail.com">✉ evansngugi455@gmail.com</a><a href="https://www.linkedin.com/in/evans-ngugi831b411a2" target="_blank" rel="noopener noreferrer">↗ LinkedIn profile</a></div>
+          <p style="margin-top:18px;color:#b9d1e1">Murang'a County, Kenya</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><strong>EN · Evans Muhia Ngugi</strong><br>© 2026 Evans Muhia Ngugi · Professional Portfolio</footer>
+</body>
+</html>
