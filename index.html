@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evans Ngugi | Water Engineering Technician</title>
+  <meta name="description" content="Evans Muhia Ngugi – Water engineering technician specialising in water and wastewater infrastructure, GIS asset management and Non-Revenue Water analysis.">
+  <style>
+    :root {
+      --navy: #0b2545;
+      --blue: #13315c;
+      --teal: #1b9aaa;
+      --light: #f4f7fb;
+      --text: #1f2933;
+      --muted: #5f6c7b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); line-height: 1.6; background: #fff; }
+    a { color: var(--teal); text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* ---------- Header / nav ---------- */
+    header { position: sticky; top: 0; z-index: 10; background: var(--navy); }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; max-width: 1100px; margin: 0 auto; }
+    .logo { color: #fff; font-weight: 800; font-size: 1.4rem; letter-spacing: 2px; }
+    nav ul { list-style: none; display: flex; gap: 24px; }
+    nav ul a { color: #dbe7f3; font-weight: 500; }
+    nav ul a:hover { color: var(--teal); }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      /* To use your own background photo: put it in an "images" folder and change the url below */
+      background: linear-gradient(rgba(11,37,69,.82), rgba(11,37,69,.82)), url("images/hero.jpg") center/cover, var(--blue);
+      color: #fff; text-align: center; padding: 120px 20px;
+    }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; color: #cfe0f1; max-width: 700px; margin: 0 auto 30px; }
+    .btn { display: inline-block; padding: 12px 26px; border-radius: 6px; font-weight: 600; margin: 6px; }
+    .btn-primary { background: var(--teal); color: #fff; }
+    .btn-outline { border: 2px solid #fff; color: #fff; }
+    .btn:hover { opacity: .88; }
+
+    /* ---------- Sections ---------- */
+    section { padding: 80px 0; }
+    section:nth-of-type(even) { background: var(--light); }
+    h2 { font-size: 2rem; color: var(--navy); margin-bottom: 30px; text-align: center; }
+    h3 { color: var(--blue); margin: 24px 0 12px; }
+
+    .about-grid { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; }
+    .about-grid img { width: 100%; border-radius: 10px; background: #dde6ef; aspect-ratio: 1/1; object-fit: cover; }
+    .entry { margin-bottom: 16px; }
+    .entry strong { display: block; }
+    .entry span { color: var(--muted); font-size: .95rem; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .card ul { padding-left: 18px; }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .project img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: #dde6ef; margin-bottom: 14px; }
+    .tags { margin-top: 12px; }
+    .tag { display: inline-block; background: #e3f4f6; color: #0f6f7a; padding: 3px 10px; border-radius: 20px; font-size: .8rem; margin: 3px 4px 0 0; }
+
+    .contact-list { list-style: none; text-align: center; font-size: 1.1rem; }
+    .contact-list li { margin: 10px 0; }
+
+    footer { background: var(--navy); color: #cfe0f1; text-align: center; padding: 30px 20px; }
+    footer .logo { display: block; margin-bottom: 8px; }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 720px) {
+      nav ul { gap: 14px; font-size: .9rem; }
+      .hero h1 { font-size: 2rem; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-grid img { max-width: 220px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">EN</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <h1>Evans Muhia Ngugi</h1>
+    <p>Water Engineering Technician · Water &amp; Wastewater Infrastructure · GIS Asset Management</p>
+    <a class="btn btn-primary" href="mailto:evansngugi455@gmail.com">Email Me</a>
+    <a class="btn btn-outline" href="https://www.linkedin.com/in/evans-ngugi831b411a2" target="_blank">LinkedIn</a>
+    <!-- Optional: upload your CV as resume.pdf and uncomment the next line -->
+    <!-- <a class="btn btn-outline" href="resume.pdf" download>Download CV</a> -->
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <!-- Put your photo in the images folder as profile.jpg -->
+        <img src="images/profile.jpg" alt="Evans Ngugi">
+        <div>
+          <p>Water engineer with 9+ years of experience supporting water and sanitation infrastructure for four utilities and a national water-sector fund in Kenya. I review engineering drawings and as-builts against field conditions, keep infrastructure records accurate and current, and prepare progress and regulatory reports for management and WASREB.</p>
+
+          <h3>Education</h3>
+          <div class="entry"><strong>BA Development Studies – Project Management</strong><span>Management University of Africa · 2023 – 2026</span></div>
+          <div class="entry"><strong>Diploma in Water Engineering</strong><span>Kenya Water Institute (KEWI) · 2016 – 2019</span></div>
+
+          <h3>Experience</h3>
+          <div class="entry"><strong>Assets Development Officer – GIS &amp; Infrastructure</strong><span>Gatanga Water and Sanitation Company PLC · Apr 2022 – Present</span></div>
+          <div class="entry"><strong>GIS Water Utility Mapping Coordinator</strong><span>Gatundu Water and Sanitation Company · Jul 2021 – Mar 2022</span></div>
+          <div class="entry"><strong>GIS Utility Mapping Coordinator</strong><span>Gatanga Water and Sanitation Company PLC · Sep 2020 – Apr 2021</span></div>
+          <div class="entry"><strong>GIS Intern</strong><span>Murang'a South Water and Sanitation Company · Sep 2018 – Sep 2020</span></div>
+          <div class="entry"><strong>GIS Enumerator – J6P Programme</strong><span>Water Sector Trust Fund · Sep – Nov 2017</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Water &amp; Wastewater</h3>
+          <ul>
+            <li>Treatment works, intakes, storage &amp; pipe networks</li>
+            <li>Non-Revenue Water (NRW) analysis</li>
+            <li>As-built verification &amp; field QA/QC</li>
+            <li>Regulatory reporting (WASREB)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Geospatial</h3>
+          <ul>
+            <li>QGIS &amp; ArcGIS Pro</li>
+            <li>GPS field survey</li>
+            <li>ODK Collect data collection</li>
+            <li>Asset register &amp; database management</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software &amp; Project Tools</h3>
+          <ul>
+            <li>Civil 3D</li>
+            <li>MS Project, Excel, Word, PowerPoint</li>
+            <li>Power BI</li>
+            <li>Document control &amp; SOP writing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <!-- Copy a <div class="card project"> block to add more projects. Put screenshots in the images folder. -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="card project">
+          <img src="images/nrw.jpg" alt="NRW zone risk map">
+          <h3>Monthly NRW Monitoring Workflow</h3>
+          <p>A repeatable workflow that turns updated field data into zone-level water loss risk maps each month, replacing manual re-analysis.</p>
+          <div class="tags"><span class="tag">QGIS</span><span class="tag">NRW</span><span class="tag">Automation</span></div>
+        </div>
+
+        <div class="card project">
+          <img src="images/datum.jpg" alt="Drawing datum correction">
+          <h3>Legacy Drawing Datum Correction</h3>
+          <p>Found and corrected a 280-metre location error in legacy infrastructure drawings by converting them to the current survey datum.</p>
+          <div class="tags"><span class="tag">Survey</span><span class="tag">GIS</span><span class="tag">QA/QC</span></div>
+        </div>
+
+        <div class="card project">
+          <img src="images/assets.jpg" alt="Utility asset register">
+          <h3>GATAWASCO Asset Register</h3>
+          <p>The utility's full infrastructure record – treatment works, intakes, boreholes, tanks, kiosks, pipes and connections – used for operations and capital planning.</p>
+          <div class="tags"><span class="tag">Asset Management</span><span class="tag">Database</span></div>
+        </div>
+
+        <div class="card project">
+          <img src="images/wstf.jpg" alt="WSTF field assessment">
+          <h3>WSTF J6P Water Provider Assessment</h3>
+          <p>Assessed water sources and distribution systems of small providers in Narok, Tharaka Nithi and Laikipia, and submitted network maps to the Maji Data platform.</p>
+          <div class="tags"><span class="tag">ODK</span><span class="tag">Field Survey</span><span class="tag">Mapping</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>📧 <a href="mailto:evansngugi455@gmail.com">evansngugi455@gmail.com</a></li>
+        <li>📍 Murang'a County, Kenya</li>
+        <li>🔗 <a href="https://www.linkedin.com/in/evans-ngugi831b411a2" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span class="logo">EN</span>
+    <p>© 2026 Evans Muhia Ngugi</p>
+  </footer>
+
+</body>
+</html>
